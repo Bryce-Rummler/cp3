@@ -38,7 +38,6 @@ export default {
         let max = this.$root.$data.products.length;
         let min = 1;
         let randProductIndex = Math.floor(Math.random() * (max - min) + min);
-        console.log(randProductIndex);
         let product = this.$root.$data.products.filter(product => product.id === randProductIndex);
         this.$root.$data.cart.push(product[0]);
     }
