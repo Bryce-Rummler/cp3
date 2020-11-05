@@ -12,7 +12,7 @@
         <div class="price">
           <h2>{{ product.price }}</h2>
           <button class="auto" v-on:click="removeFromCart(product)">
-            Remove from cart
+            Remove
           </button>
         </div>
       </div>
