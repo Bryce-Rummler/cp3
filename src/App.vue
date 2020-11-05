@@ -16,12 +16,16 @@
         <router-link to="/cart">
           <div class="menu-item">
             <img src="/images/love.png" />
-            <p>{{$root.$data.cart.length}} items</p>
+            <p>{{ $root.$data.cart.length }} items</p>
           </div>
         </router-link>
       </div>
     </div>
     <router-view />
+    <div id="footer">
+      <p><a href="https://github.com/BYU-CS-260-Winter-2020/lab-3b-grocery-store-Bryce-Rummler"
+      target="_blank">Github</a></p>
+    </div>
   </div>
 </template>
 
@@ -77,5 +81,16 @@ body {
 
 .browse {
   margin-right: 50px;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2921d;
+  color: white;
+  text-align: right;
+  padding-right: 25px;
 }
 </style>
