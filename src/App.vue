@@ -7,23 +7,22 @@
         </router-link>
       </div>
       <div id="side">
-        <router-link to="/browse">
+        <router-link to="/add">
           <div class="menu-item browse">
             <img src="/images/globe.png" />
-            <p>Browse</p>
+            <p>Add Movie</p>
           </div>
         </router-link>
-        <router-link to="/cart">
+        <router-link to="/add">
           <div class="menu-item">
             <img src="/images/love.png" />
-            <p>{{ $root.$data.cart.length }} items</p>
           </div>
         </router-link>
       </div>
     </div>
     <router-view />
     <div id="footer">
-      <p><a href="https://github.com/BYU-CS-260-Winter-2020/lab-3b-grocery-store-Bryce-Rummler"
+      <p><a href="https://github.com/Bryce-Rummler/cp3"
       target="_blank">Github</a></p>
     </div>
   </div>

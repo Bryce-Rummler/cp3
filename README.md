@@ -1,4 +1,4 @@
-# grocery-store
+# cp3
 
 ## Project setup
 ```

@@ -7,16 +7,16 @@
         </form>
       </div>
     </div>
-    <ProductList :products="products" />
+    <MovieList :movies="movies" />
   </div>
 </template>
 
 <script>
-import ProductList from "../components/ProductList.vue";
+import MovieList from "../components/MovieList.vue";
 export default {
   name: "Home",
   components: {
-    ProductList
+    MovieList
   },
   data() {
     return {
@@ -24,9 +24,9 @@ export default {
     };
   },
   computed: {
-    products() {
-      return this.$root.$data.products.filter(
-        product => product.name.toLowerCase().search(this.searchText) >= 0
+    movies() {
+      return this.$root.$data.movies.filter(
+        (movie) => movie.title.toLowerCase().search(this.searchText) >= 0
       );
     }
   }
