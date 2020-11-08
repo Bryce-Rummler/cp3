@@ -1,16 +1,9 @@
 <template>
-  <div>
-    <div class="info">
+  <div id="info">
       <h1>{{ movie.title }}</h1>
       <h2>{{ movie.rating }}</h2>
       <p>{{ movie.releaseYear }}</p>
-    </div>
-    <div class="image">
-      <img :src="'/images/movies/' + movie.image" />
-    </div>
-    <div class="price">
-      <p>todo: display stars {{ movie.stars }}</p>
-    </div>
+      <img :src="'/images/movies/' + movie.image"  id="image" />
   </div>
 </template>
 
@@ -24,3 +17,13 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+#info {
+    text-align: center;
+}
+
+#image {
+    width: 200px;
+}
+</style>

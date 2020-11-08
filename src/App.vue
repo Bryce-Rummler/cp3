@@ -9,20 +9,14 @@
       <div id="side">
         <router-link to="/add">
           <div class="menu-item browse">
-            <img src="/images/globe.png" />
-            <p>Add Movie</p>
-          </div>
-        </router-link>
-        <router-link to="/add">
-          <div class="menu-item">
-            <img src="/images/love.png" />
+            <p id="link">Add Movie</p>
           </div>
         </router-link>
       </div>
     </div>
     <router-view />
     <div id="footer">
-      <p><a href="https://github.com/Bryce-Rummler/cp3"
+      <p>Steven Rummler | Bryce Rummler |  <a href="https://github.com/Bryce-Rummler/cp3"
       target="_blank">Github</a></p>
     </div>
   </div>
@@ -39,24 +33,24 @@ body {
 
 #menu {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 5px;
-  grid-template-areas: "none brand side";
+  grid-template-areas: "brand side";
   margin-bottom: 50px;
 }
 
 #menu a {
-  color: #b84901;
+  color: red;
 }
 
 #brand {
   grid-area: brand;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 #brand img {
-  height: 200px;
+  height: 150px;
 }
 
 #side {
@@ -65,13 +59,15 @@ body {
   justify-content: flex-end;
 }
 
-#side img {
-  width: 50px;
+#link {
+  margin: auto;
 }
 
 .menu-item {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  height: 100%;
 }
 
 .menu-item p {
@@ -87,7 +83,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #f2921d;
+  background-color: lightgreen;
   color: white;
   text-align: right;
   padding-right: 25px;

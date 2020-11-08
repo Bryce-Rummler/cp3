@@ -5,15 +5,14 @@
         <div class="info">
           <h1>{{ movie.title }}</h1>
           <h2>{{ movie.rating }}</h2>
-          <p>{{ movie.releaseYear }}</p>
+          <h2>{{ movie.releaseYear }}</h2>
+          <router-link :to="{ name: 'ViewMovie', params: { movie: movie } }"
+            >Details</router-link
+          >
         </div>
         <div class="image">
           <img :src="'/images/movies/' + movie.image" />
         </div>
-        <div class="price">
-          <p>todo: display stars {{ movie.stars }}</p>
-        </div>
-        <router-link :to="{ name: 'ViewMovie', params: { movie: movie }}">Details</router-link>
       </div>
     </div>
   </div>
@@ -62,14 +61,15 @@ export default {
 }
 
 .info {
-  background: #f2921d;
+  background: lightgreen;
   color: #000;
   padding: 10px 30px;
-  height: 125px;
+  height: 175px;
+  text-align: center;
 }
 
 .info h1 {
-  font-size: 16px;
+  font-size: 28px;
 }
 
 .info h2 {

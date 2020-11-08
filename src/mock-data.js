@@ -3,7 +3,6 @@ let mock = [{
     title: "Wonder",
     releaseYear: 2017,
     rating: "PG",
-    stars: 4,
     image: 'wonder.jpg'
   },
   {
@@ -11,7 +10,6 @@ let mock = [{
     title: "Cars",
     releaseYear: 2006,
     rating: "PG",
-    stars: 5,
     image: 'cars.jpg'
   },
   {
@@ -19,7 +17,6 @@ let mock = [{
     title: "Titanic",
     releaseYear: 1997,
     rating: "PG-13",
-    stars: 4,
     image: 'titanic.jpg'
   }
 ]

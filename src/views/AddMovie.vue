@@ -1,15 +1,24 @@
 <template>
-  <div>
-    <input v-model="title" placeholder="Movie title" />
-    <input v-model="releaseYear" placeholder="Release year" />
-    <select v-model="rating">
-      <option disabled value="">Rating</option>
-      <option>G</option>
-      <option>PG</option>
-      <option>PG-13</option>
-      <option>R</option>
-    </select>
-    <button v-on:click="submit()">Submit</button>
+  <div id="container">
+    <div id="form">
+      <input v-model="title" placeholder="Movie title" class="form-item" />
+      <br />
+      <input
+        v-model="releaseYear"
+        placeholder="Release year"
+        class="form-item"
+      />
+      <br />
+      <select v-model="rating" class="form-item">
+        <option disabled value="">Rating</option>
+        <option>G</option>
+        <option>PG</option>
+        <option>PG-13</option>
+        <option>R</option>
+      </select>
+      <br />
+      <button v-on:click="submit()" class="form-item">Submit</button>
+    </div>
   </div>
 </template>
 
@@ -46,3 +55,21 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+#container {
+    display: flex;
+}
+
+#form {
+display: flex;
+flex-direction: column;
+  margin: auto;
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+.form-item {
+  margin: 10px;
+}
+</style>
